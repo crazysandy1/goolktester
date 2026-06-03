@@ -1,0 +1,274 @@
+/* ══════════════════════════════════════════════
+   GOOLK AI — SERVICES PAGE CSS v4
+   Editorial / Clinical / Non-template
+   Warm papyrus palette · Deep forest green brand
+   ══════════════════════════════════════════════ */
+
+.hero {
+  background: var(--surface);
+  padding: 156px 5vw 80px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heroH1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+.heroH1 em {
+  font-style: italic;
+  color: var(--brand);
+}
+
+.heroSub {
+  font-size: 1.06rem;
+  color: var(--ink-muted);
+  line-height: 1.78;
+  max-width: 620px;
+  margin: 0 auto 2.25rem;
+}
+
+.heroActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Service Detail Rows */
+.svcSection {
+  background: var(--surface-alt);
+  padding: 100px 5vw;
+  border-bottom: 1px solid var(--border);
+}
+
+.svcSectionAlt {
+  background: var(--white);
+  padding: 100px 5vw;
+  border-bottom: 1px solid var(--border);
+}
+
+.svcInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.svcContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.svcNum {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--brand);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.svcTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.025em;
+}
+
+.svcDesc {
+  font-size: 1.02rem;
+  color: var(--ink-muted);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.svcDetailCard {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2.25rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 28px rgba(20,25,22,0.04);
+}
+
+.svcSectionAlt .svcDetailCard {
+  background: var(--surface);
+}
+
+.cardTitle {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.875rem;
+  border-bottom: 1px solid var(--border);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.bulletList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.bulletItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--ink-mid);
+}
+
+.bullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--brand);
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+/* Outcomes Block in details */
+.outcomesBlock {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
+
+.outcomesLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+
+.outcomeMetric {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--brand);
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+
+.outcomeText {
+  font-size: 0.84rem;
+  color: var(--ink-muted);
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .svcInner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 136px;
+    padding-bottom: 60px;
+  }
+  .svcSection, .svcSectionAlt {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .svcDetailCard {
+    padding: 1.75rem;
+  }
+  .approachSteps { grid-template-columns: 1fr; }
+  .approachStep { border-right: none !important; border-top: 1px solid var(--border); }
+}
+
+@media (max-width: 480px) {
+  .svcSection, .svcSectionAlt, .approachSection {
+    padding: 48px 4vw;
+  }
+  .svcDetailCard {
+    padding: 1.25rem;
+  }
+}
+
+/* ─── APPROACH ─── */
+.approachSection {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 100px 5vw;
+}
+.approachInner { max-width: 1200px; margin: 0 auto; }
+.approachHead { margin-bottom: 4rem; }
+.approachH2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 800; line-height: 1.08;
+  letter-spacing: -0.035em; color: var(--ink);
+  margin-top: 0.5rem;
+}
+.approachH2 em { font-style: italic; color: var(--brand); }
+.approachSteps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  border: 1px solid var(--border); border-radius: 10px; overflow: hidden;
+}
+.approachStep {
+  padding: 2rem 1.75rem;
+  border-right: 1px solid var(--border);
+  background: var(--white);
+  transition: background 0.2s;
+}
+.approachStep:last-child { border-right: none; }
+.approachStep:hover { background: var(--brand-light); }
+.approachStepNum {
+  font-family: var(--font-heading); font-size: 2rem; font-weight: 800;
+  color: var(--brand); line-height: 1; margin-bottom: 0.875rem;
+  letter-spacing: -0.03em;
+}
+.approachStepTitle {
+  font-family: var(--font-heading); font-size: 0.95rem; font-weight: 700;
+  color: var(--ink); margin-bottom: 0.35rem;
+}
+.approachStepWeeks {
+  font-size: 0.65rem; font-weight: 600; color: var(--brand-mid);
+  text-transform: uppercase; letter-spacing: 0.07em;
+  margin-bottom: 0.875rem;
+}
+.approachStepDesc {
+  font-size: 0.8rem; color: var(--ink-muted); line-height: 1.68;
+}
+
+@media (max-width: 1024px) {
+  .approachSteps { grid-template-columns: repeat(3, 1fr); }
+  .approachStep:nth-child(3) { border-right: none; }
+  .approachStep:nth-child(4), .approachStep:nth-child(5) {
+    border-top: 1px solid var(--border);
+  }
+}
+

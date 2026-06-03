@@ -1,0 +1,540 @@
+/* ══════════════════════════════════════════════
+   GOOLK AI — SOLUTIONS PAGE CSS v4
+   Editorial / Clinical / Non-template
+   Warm papyrus palette · Deep forest green brand
+   ══════════════════════════════════════════════ */
+
+.hero {
+  background: var(--surface);
+  padding: 156px 5vw 80px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  maxWidth: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heroH1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroH1 em {
+  font-style: italic;
+  color: var(--brand);
+}
+
+.heroSub {
+  font-size: 1.06rem;
+  color: var(--ink-muted);
+  line-height: 1.78;
+  max-width: 620px;
+  margin: 0 auto 2.25rem;
+}
+
+.heroActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Solutions section & tabs */
+.tabSection {
+  background: var(--surface-alt);
+  padding: 0 5vw 96px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tabBarWrapper {
+  position: sticky;
+  top: 64px; /* adjust below navbar */
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(16px);
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 4rem;
+  transition: all 0.3s;
+}
+
+.tabBar {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2px 0;
+}
+
+.tabButton {
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  border: 1.5px solid var(--border);
+  background: var(--white);
+  color: var(--ink-mid);
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  font-family: var(--font-body);
+}
+
+.tabButton:hover {
+  border-color: var(--brand-mid);
+  color: var(--brand);
+}
+
+.tabButtonActive {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--white);
+}
+
+/* Active tab display */
+.activeTabGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.tabLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.tabDesc {
+  font-size: 1.02rem;
+  color: var(--ink-muted);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.kpiCard {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--brand-light);
+  border: 1px solid var(--border-mid);
+  border-radius: 8px;
+  padding: 0.8rem 1.4rem;
+  margin-bottom: 2.5rem;
+  max-width: max-content;
+}
+
+.kpiNum {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--brand);
+  line-height: 1;
+}
+
+.kpiLabel {
+  font-size: 0.72rem;
+  color: var(--brand-deep);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 2px;
+}
+
+.kpiDivider {
+  width: 1px;
+  height: 38px;
+  background: var(--border-mid);
+}
+
+.kpiText {
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  font-weight: 500;
+  max-width: 160px;
+  line-height: 1.4;
+}
+
+.tabActions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.featuresCard {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2.25rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 28px rgba(20,25,22,0.04);
+}
+
+.featuresTitle {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.featuresList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 0.8rem 1rem;
+  background: var(--surface);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink);
+  border: 1px solid var(--border);
+}
+
+.featureBullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--brand);
+  flex-shrink: 0;
+}
+
+/* Why Goolk AI / Differentiators */
+.whySection {
+  background: var(--white);
+  padding: 100px 5vw;
+  border-bottom: 1px solid var(--border);
+}
+
+.whyHeader {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.whyGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.diffCard {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  transition: all 0.25s ease;
+}
+
+.diffCard:hover {
+  border-color: var(--brand-mid);
+  box-shadow: 0 10px 36px rgba(42,92,63,0.08);
+  transform: translateY(-2px);
+}
+
+.diffIcon {
+  width: 46px;
+  height: 46px;
+  border-radius: 8px;
+  background: var(--brand-light);
+  color: var(--brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.diffIcon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.diffContent h3 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.diffContent p {
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  line-height: 1.72;
+}
+
+/* Engagement models */
+.engSection {
+  background: var(--surface-alt);
+  padding: 100px 5vw;
+}
+
+.engHeader {
+  max-width: 720px;
+  margin-bottom: 4.5rem;
+}
+
+.engGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.engCard {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2.25rem;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+}
+
+.engCard:hover {
+  border-color: var(--brand-mid);
+  box-shadow: 0 12px 40px rgba(42,92,63,0.09);
+  transform: translateY(-3px);
+}
+
+.engNum {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--brand);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.engTitle {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+}
+
+.engSubtitle {
+  font-size: 0.8rem;
+  color: var(--brand-mid);
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.engDesc {
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  line-height: 1.72;
+  margin-bottom: 1.75rem;
+  flex: 1;
+}
+
+.engIncludes {
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.includesLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.875rem;
+}
+
+.includesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.includesItem {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 0.84rem;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.includesBullet {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--brand);
+  flex-shrink: 0;
+}
+
+.engFit {
+  font-size: 0.76rem;
+  color: var(--ink-muted);
+  background: var(--surface);
+  border-radius: 6px;
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  border: 1px solid var(--border);
+}
+
+.engCta {
+  text-align: center;
+  justify-content: center;
+  font-size: 0.86rem;
+}
+
+/* ─── SHARED SECTION LABEL ─── */
+.sectionLabel {
+  display: inline-block;
+  font-size: 0.64rem; font-weight: 700;
+  color: var(--brand); text-transform: uppercase;
+  letter-spacing: 0.1em; margin-bottom: 1.25rem;
+  border-left: 3px solid var(--brand); padding-left: 0.625rem;
+}
+
+/* ─── WHO WE SERVE ─── */
+.whoSection {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 100px 5vw;
+}
+.whoInner { max-width: 1280px; margin: 0 auto; }
+.whoHead { margin-bottom: 4rem; }
+.whoH2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 800; line-height: 1.08;
+  letter-spacing: -0.035em; color: var(--ink);
+  margin-top: 1rem;
+}
+.whoH2 em { font-style: italic; color: var(--brand); }
+.whoGrid {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--border);
+}
+.whoItem {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+  padding-right: 4vw;
+  display: grid; grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+.whoItem:nth-child(even) {
+  padding-left: 4vw; padding-right: 0;
+  border-left: 1px solid var(--border);
+}
+.whoTitle {
+  font-family: var(--font-heading); font-size: 0.97rem; font-weight: 700;
+  color: var(--ink); letter-spacing: -0.01em;
+}
+.whoDesc { font-size: 0.84rem; color: var(--ink-muted); line-height: 1.68; }
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .engGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .whyGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .activeTabGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 136px;
+    padding-bottom: 60px;
+  }
+  .tabSection {
+    padding-bottom: 60px;
+  }
+  .whySection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .engSection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .whoSection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .tabBarWrapper {
+    top: 56px;
+    margin-bottom: 2.5rem;
+  }
+  .kpiCard {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .diffCard {
+    padding: 1.5rem;
+  }
+  .engCard {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .whoGrid { grid-template-columns: 1fr; }
+  .whoItem:nth-child(even) { border-left: none; padding-left: 0; }
+}
+
+@media (max-width: 480px) {
+  .tabSection, .whySection, .engSection, .whoSection {
+    padding: 48px 4vw;
+  }
+  .diffCard, .engCard {
+    padding: 1.25rem;
+  }
+}
+

@@ -1,0 +1,419 @@
+/* ══════════════════════════════════════════════
+   GOOLK AI — CAREERS PAGE CSS v4
+   Editorial / Clinical / Non-template
+   Warm papyrus palette · Deep forest green brand
+   ══════════════════════════════════════════════ */
+
+.hero {
+  background: var(--surface);
+  padding: 156px 5vw 80px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+}
+
+.heroH1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+.heroH1 em {
+  font-style: italic;
+  color: var(--brand);
+}
+
+.heroSub {
+  font-size: 1.06rem;
+  color: var(--ink-muted);
+  line-height: 1.78;
+  max-width: 620px;
+}
+
+/* Benefits Section */
+.benefitsSection {
+  background: var(--white);
+  padding: 100px 5vw;
+  border-bottom: 1px solid var(--border);
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefitCard {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  transition: all 0.25s ease;
+}
+
+.benefitCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand-mid);
+  box-shadow: 0 10px 32px rgba(42,92,63,0.06);
+}
+
+.benefitIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: var(--brand-light);
+  color: var(--brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  flex-shrink: 0;
+}
+
+.benefitIcon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.benefitCard h3 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.benefitCard p {
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  line-height: 1.72;
+}
+
+/* Open Roles Section */
+.rolesSection {
+  background: var(--surface-alt);
+  padding: 100px 5vw;
+  border-bottom: 1px solid var(--border);
+}
+
+.rolesList {
+  max-width: 860px;
+  margin: 3rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.roleCard {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  border: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  transition: all 0.2s ease;
+}
+
+.roleCard:hover {
+  border-color: var(--brand-mid);
+  box-shadow: 0 4px 20px rgba(20,25,22,0.03);
+}
+
+.roleTitle {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+
+.roleMeta {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.roleDept {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--brand);
+  background: var(--brand-light);
+  padding: 2px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.roleType {
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  font-weight: 500;
+}
+
+.roleDesc {
+  font-size: 0.86rem;
+  color: var(--ink-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.roleBtn {
+  white-space: nowrap;
+  font-size: 0.84rem;
+}
+
+/* Hiring timeline process */
+.processSection {
+  background: var(--white);
+  padding: 100px 5vw;
+  border-bottom: 1px solid var(--border);
+}
+
+.processList {
+  max-width: 680px;
+  margin: 3rem auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.processStep {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.timelineCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40px;
+  flex-shrink: 0;
+}
+
+.stepDot {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--brand);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.stepLine {
+  flex: 1;
+  width: 2px;
+  background: var(--border);
+  margin-top: 4px;
+}
+
+.stepContent {
+  flex: 1;
+  padding-top: 0.4rem;
+  padding-bottom: 2.25rem;
+}
+
+.processStep:last-child .stepContent {
+  padding-bottom: 0;
+}
+
+.stepTitle {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.35rem;
+}
+
+.stepDesc {
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  line-height: 1.65;
+}
+
+/* Apply section & form */
+.applySection {
+  background: var(--surface-alt);
+  padding: 100px 5vw;
+}
+
+.formCard {
+  max-width: 640px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: 14px;
+  padding: 3rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 32px rgba(20,25,22,0.05);
+}
+
+.formTitle {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.formDesc {
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  margin-bottom: 2.5rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--ink-muted);
+  margin-bottom: 0.45rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.field {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--border);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  background: var(--surface);
+  color: var(--ink);
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.field:focus {
+  border-color: var(--brand);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(42,92,63,0.1);
+}
+
+.select {
+  appearance: auto;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.statusError {
+  font-size: 0.84rem;
+  color: #a72828;
+  background: #fdf2f2;
+  border: 1px solid #f8baba;
+  padding: 0.85rem 1.1rem;
+  border-radius: 8px;
+  line-height: 1.5;
+}
+
+.statusSuccess {
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.successIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--green-light);
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.successTitle {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.successDesc {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .benefitsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 136px;
+    padding-bottom: 60px;
+  }
+  .benefitsSection, .rolesSection, .processSection, .applySection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .roleCard {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.25rem;
+  }
+  .roleBtn {
+    width: 100%;
+    text-align: center;
+  }
+  .formCard {
+    padding: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+  }
+}
